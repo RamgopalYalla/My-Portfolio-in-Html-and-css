@@ -30,7 +30,7 @@
                 <div class="toggle"></div>
                 <ul>
                     <li><a href="#home">About</a></li> 
-                    <li><a href="#skills">Skills</a></li> 
+                    <li><a href="#skills">Skills</a></li>  
                     <li><a href="#career">Career</a></li> 
                     <li><a href="#projects">Projects </a></li> 
                     <li><a href="#contact">Contact</a></li> 
@@ -40,7 +40,7 @@
                 <div class="textBx">
                     <h2>Hello, I'm<br><font color="#860a0a">Ramgopal</font> Yalla</h2>
                     <h3><font color="#860a0a">#.............................</font>I am Data-Driven Person</h3>
-                    <a href="./Ramgopal_CV.pdf" class="btn">Download CV</a>
+                    <a href="./Ramgopal_CV.pdf" target="_blank" class="btn">Download CV</a> 
                 </div>
                 <div class="banner_img">
                     <img src="" class="b_img">
@@ -56,7 +56,7 @@
                     <div class="contentBx w50">
                         <h3>About me</h3>
                         <p>
-                             I'm an Indian living in Germany. I am a software Engineer with a passion for Data Science and Machine learning.<br>
+                              I am a software Engineer with a passion for Data Science and Machine learning.<br>
                              <br> I hold a Masters's Degree in Computer Science with a focus on programming for Engineers and started my early career as a Logistics Associate/IT Specialist and gained a lot of experience in diverse departments of supply chain management for the past one and half year's.
                              <br><br>With great passion in Data Science, I have started learning Data Science from scratch for past one year and recently certified as a Data scientist.
                              <br><br> I am Looking forward to join a team with a like minded people to pursue my career as Machine Learning Engineer, Data Analyst and Front-End Developer.
@@ -345,12 +345,12 @@
                         </div>
                     </div>
                     <div class="formBx">
-                        <form>
+                        <form id="formBx" method="post" action="message.php">
                             <h3>Message Me</h3>
-                            <input type="text" name="" placeholder="Full Name">
-                            <input type="email" name="" placeholder="Email">
-                            <textarea placeholder="Your Message"></textarea>
-                            <input type="submit" value="Send">
+                            <input name="name" type="text" class="formBx" placeholder="Full Name" required>
+                            <input name="email" type="email" class="formBx" placeholder="Email" required>
+                            <textarea name="message" class="formBx" placeholder="Your Message" required></textarea>
+                            <input type="submit" class="formBx" value="Send">
                         </form>
                     </div>
                 </div>
